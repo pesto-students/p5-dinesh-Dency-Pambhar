@@ -1,0 +1,157 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "lato", sans-serif;
+}
+body{
+  background: rgb(226, 226, 226);
+}
+
+.side-bar{
+  position: static;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  width: 90px;
+  /* width: 280px; */
+  background: #fff;
+  overflow: hidden;
+  transition: 1s; 
+}
+.side-bar-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+nav:hover{
+  width: 280px;
+  transition: 1s;
+}
+a{
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  color: rgb(85, 83, 83);
+  display: table;
+  padding: 20px;
+}
+nav .las{
+  position: relative;
+  width: 70px;
+  height: 50px;
+  top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+nav .lab{
+    position: relative;
+    width: 70px;
+    height: 50px;
+    top: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+.nav-item{
+  position: relative;
+  top: 15px;
+  margin-left: 10px;
+}
+a:hover{
+  background: #eee;
+}
+a:hover i{
+  color: #34AF6D;
+  transition: 0.5s;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  width : 100%;
+}
+
+/* MAin Section */
+.main-section{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width : 100%;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: #fff;
+    padding : 50px;
+    height : 300px;
+}
+.info{
+    display: flex;
+    flex-direction: column  ;
+    padding-left: 50px;
+    justify-content: space-between;
+}
+.playlist{
+   display: flex;
+   flex-direction: row;
+}
+.playlist span{
+    padding-right: 20px;
+}
+table{
+width : 100%;
+height : 50%;
+border-collapse: collapse;
+margin-top: -200px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height : 100px;
+    padding : 20px;
+    background-color: rgb(59, 59, 221);
+}
+.play-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width : 100%;
+    margin-left: -12 0px;
+}
+.song-info{
+    justify-content: flex-start;
+}
+.song-control{
+    justify-content: flex-end;
+    
+}
+ tr:nth-child(odd){
+    background-color: whitesmoke;
+    color: black;
+    height: 50px;
+  }
+  tr:nth-child(even){
+    background-color: white;
+    color: black;
+    height : 50px;
+  }
+
+.song-control .las{
+    margin-left: 50px ;
+    margin-top: 30px;
+
+}
+.footer img{
+height : 70px;
+width : 80px;
+}
