@@ -1,0 +1,68 @@
+.head{
+  margin-top: 100px;
+  height: 300px;
+
+  text-align: center;
+  vertical-align: middle;
+  font-size: 4rem;
+
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.content_left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-content: space-between;
+
+  padding: 10px;
+
+}
+
+img{
+  height: 400px;
+  width: 500px;
+  padding: 20px;
+}
+
+.content_right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+
+}
+body{
+  margin: 20px;
+}
+@media screen and (max-width: 1000px) {
+.content_left , .content_right{
+  align-content: center;
+  width: auto;
+}
+.content {
+flex-direction: column; /* The width is 100%, when the viewport is 800px or smaller */
+}
+}
+label{
+  width: 180px;
+  display: inline-block;
+}
+.check{
+padding-left: 20px;
+width: 300px;
+
+}
+form{
+  margin-left: 30px;
+}
+.submit{
+margin-left: 20px;
+height: 40px;
+}
