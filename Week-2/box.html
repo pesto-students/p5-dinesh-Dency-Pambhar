@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-item_tl,.grid-item_tr,.grid-item_bl,.grid-item_br{
+    width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+
+}
+.grid-item_tr{
+    width: 100px;
+  height: 100px;
+  background: green;
+  animation-timing-function: linear;
+
+  transition: width 2s, height 2s, transform 1s;
+}
+@keyframes example_r {
+  from {left: 0px;}
+  to {left: 100px;}
+}
+@keyframes example {
+  from {left: 0px;}
+  to {left: -100px;}
+}
+
+.grid-item_bl{
+width: 100px;
+  height: 100px;
+  background: blue;
+  transition: width 2s, height 2s, transform 2s;
+}
+.grid-item_br{
+    width: 100px;
+  height: 100px;
+  background: yellow;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  justify-content: center;
+
+}
+.grid-item_tl:hover {
+   
+  transform: rotate(-90deg);
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+
+}
+.grid-item_tr:hover {
+   
+   transform: rotate(90deg);
+   position: relative;
+  animation-name: example_r;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+ 
+ }.grid-item_bl:hover {
+   
+   transform: rotate(90deg);
+   position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+ }.grid-item_br:hover {
+   
+   transform: rotate(-90deg);
+   position: relative;
+  animation-name: example_r;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+ }
+</style>
+</head>
+<body>
+
+<h1>Transition + Transform</h1>
+
+<p>Hover over the div element below:</p>
+<div class="grid-container">
+<div class="grid-item_tl"></div>
+<div class="grid-item_tr"></div>
+<div class="grid-item_bl"></div>
+<div class="grid-item_br"></div>
+</div>
+
+</body>
+</html>

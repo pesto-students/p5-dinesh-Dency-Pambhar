@@ -1,0 +1,41 @@
+.head{
+  margin-top: 100px;
+  height: 300px;
+
+  text-align: center;
+  vertical-align: middle;
+  font-size: 4rem;
+
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.content_left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-content: space-evenly;
+}
+
+.content_right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+body{
+  margin: 20px;
+}
+@media screen and (max-width: 1000px) {
+.content_left .content_right{
+      width : 100%;
+
+  }
+.content {
+flex-direction: column; /* The width is 100%, when the viewport is 800px or smaller */
+}
+}
